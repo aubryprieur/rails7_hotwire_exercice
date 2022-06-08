@@ -1,0 +1,14 @@
+// The header is a layout we will use twice in this tutorial on the Quotes#index and the Quotes#show page. It will contain the title of the page and the main action button
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+  justify-content: space-between;
+  margin-top: var(--space-m);
+  margin-bottom: var(--space-l);
+
+  @include media(tabletAndUp) {
+    margin-bottom: var(--space-xl);
+  }
+}
